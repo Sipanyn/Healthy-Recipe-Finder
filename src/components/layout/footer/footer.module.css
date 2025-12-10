@@ -4,6 +4,8 @@
   flex-direction: row;
   justify-content: space-between;
   .content {
+    display: flex;
+    align-items: end;
     font-family: Nunito-ExtraLight;
   }
   .social_media {
@@ -15,16 +17,31 @@
       width: 28px;
       height: 28px;
       color: var(--secondary-color);
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateY(-4px);
+      }
     }
     .twitter_icon {
       width: 28px;
       height: 28px;
       color: var(--secondary-color);
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateY(-4px);
+      }
     }
     .tiktok_icon {
       width: 28px;
       height: 28px;
       color: var(--secondary-color);
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateY(-4px);
+      }
     }
   }
 }

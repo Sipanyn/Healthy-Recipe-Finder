@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import Button from "../../base/button/button";
 import Logo from "../../logo/logo";
 import styles from "./header.module.css";
@@ -9,9 +10,25 @@ const Header: React.FC = () => {
         <Logo />
       </div>
       <div className={styles.links_container}>
-        <Button variant="text">Home</Button>
-        <Button variant="text">Recipe</Button>
-        <Button variant="text">Profile</Button>
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.active : "")}
+          to="/"
+          end
+        >
+          <Button variant="text">Home</Button>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.active : "")}
+          to="recipe"
+        >
+          <Button variant="text">Recipe</Button>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.active : "")}
+          to="profile"
+        >
+          <Button variant="text">Profile</Button>
+        </NavLink>
       </div>
       <div className={styles.login_container}>
         <Button variant="contained">Login</Button>

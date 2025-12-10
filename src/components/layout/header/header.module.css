@@ -21,5 +21,25 @@
     flex-direction: row;
     gap: 30px;
     justify-content: center;
+    a.active::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: var(--copper-color);
+      border-radius: 8px;
+      animation: filling 0.3s ease-in-out forwards;
+    }
+  }
+}
+@keyframes filling {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
   }
 }

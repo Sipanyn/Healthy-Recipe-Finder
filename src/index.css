@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "Nunito-Medium";
-  src: url("/public/fonts/Nunito-Medium.ttf") format("truetype");
+  src: url("/fonts/Nunito-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Nunito-ExtraLight";
-  src: url("/public/fonts/Nunito-ExtraLight.ttf") format("truetype");
+  src: url("/fonts/Nunito-ExtraLight.ttf") format("truetype");
 }
 
 :root {
