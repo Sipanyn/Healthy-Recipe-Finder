@@ -1,0 +1,25 @@
+.header_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+  .logo_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .login_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .links_container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+}

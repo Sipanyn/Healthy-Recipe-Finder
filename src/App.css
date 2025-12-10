@@ -1,0 +1,13 @@
+#root {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: min(5vw, 1rem);
+  box-sizing: border-box; /* prevent extra scrolling*/
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+  background-color: var(--accent-color);
+}

@@ -1,0 +1,30 @@
+.footer_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .content {
+    font-family: Nunito-ExtraLight;
+  }
+  .social_media {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    .instagram_icon {
+      width: 28px;
+      height: 28px;
+      color: var(--secondary-color);
+    }
+    .twitter_icon {
+      width: 28px;
+      height: 28px;
+      color: var(--secondary-color);
+    }
+    .tiktok_icon {
+      width: 28px;
+      height: 28px;
+      color: var(--secondary-color);
+    }
+  }
+}

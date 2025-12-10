@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url("/fonts/Nunito-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito-Medium";
+  src: url("/public/fonts/Nunito-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito-ExtraLight";
+  src: url("/public/fonts/Nunito-ExtraLight.ttf") format("truetype");
+}
+
+:root {
+  line-height: 1.5;
+  --primary-color: #606c38; /* olive leafe */
+  --secondary-color: #283618; /* black forest */
+  --accent-color: #faf9f1; /* cornsilk */
+  --light_Caramel-color: #dda15e; /* caramel */
+  --copper-color: #bc6c25; /* copper */
+}
