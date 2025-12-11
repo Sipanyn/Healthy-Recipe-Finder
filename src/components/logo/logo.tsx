@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 import styles from "./logo.module.css";
 
-const Logo = () => {
+const Logo: React.FC = () => {
   return (
     <NavLink to="/">
       <div className={styles.logo_container}>

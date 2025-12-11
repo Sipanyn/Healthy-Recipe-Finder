@@ -2,7 +2,7 @@ import { useNavigate } from "react-router";
 import Button from "../base/button/button";
 import styles from "./not-found.module.css";
 
-const NotFound = () => {
+const NotFound: React.FC = () => {
   const navigate = useNavigate();
   function navigateToHome(): void {
     navigate("/");
