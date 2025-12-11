@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "../components/layout/layout/layout";
 import Home from "../components/home/home";
-import Recipe from "../components/recipe/recipe";
 import Profile from "../components/profile/profile";
+import Details from "../components/details/details";
+import Recipes from "../components/recipes/recipes";
+import NotFound from "../components/not-found/not-found";
 
 export const router = createBrowserRouter([
   {
@@ -10,8 +12,13 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
-      { path: "recipe", element: <Recipe /> },
+      {
+        path: "recipes",
+        element: <Recipes />,
+      },
+      { path: "/recipes/:recipeId", element: <Details /> },
       { path: "profile", element: <Profile /> },
     ],
   },
+  { path: "*", element: <NotFound /> },
 ]);

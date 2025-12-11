@@ -32,6 +32,18 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .header_container {
+    .logo_container {
+    }
+    .login_container {
+      display: none;
+    }
+    .links_container {
+      display: none;
+    }
+  }
+}
 @keyframes filling {
   0% {
     width: 0%;

@@ -19,9 +19,9 @@ const Header: React.FC = () => {
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? styles.active : "")}
-          to="recipe"
+          to="recipes"
         >
-          <Button variant="text">Recipe</Button>
+          <Button variant="text">Recipes</Button>
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? styles.active : "")}

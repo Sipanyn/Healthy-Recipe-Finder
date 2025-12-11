@@ -1,0 +1,21 @@
+.title_container {
+  width: clamp(300px, 80%, 700px);
+  padding-bottom: 21px; /* for margin of h1 in title below*/
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    text-align: center;
+    font-family: Nunito-Bold;
+    color: var(--secondary-color);
+  }
+  .content {
+    text-align: center;
+    font-family: Nunito-medium;
+    width: clamp(300px, 60%, 500px);
+    color: var(--secondary-color);
+  }
+  .button {
+  }
+}

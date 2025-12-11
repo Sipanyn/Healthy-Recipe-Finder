@@ -4,4 +4,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: min(5vw, 1rem);
+  box-sizing: border-box;
 }
