@@ -1,4 +1,5 @@
 .header_container {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -31,6 +32,24 @@
       animation: filling 0.3s ease-in-out forwards;
     }
   }
+  .hamburger_container {
+    display: none;
+  }
+  .menu_container {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    right: -120%;
+    width: 100%;
+
+    transition: all 0.3s;
+  }
+  .active_menu {
+    right: 0px;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 @media (max-width: 768px) {
   .header_container {
@@ -41,6 +60,9 @@
     }
     .links_container {
       display: none;
+    }
+    .hamburger_container {
+      display: block;
     }
   }
 }

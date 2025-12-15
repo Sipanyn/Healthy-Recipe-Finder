@@ -15,9 +15,18 @@
 
 :root {
   line-height: 1.5;
-  --primary-color: #606c38; /* olive leafe */
-  --secondary-color: #283618; /* black forest */
-  --accent-color: #faf9f1; /* cornsilk */
+  --primary-color: rgb(96, 108, 56); /* olive leafe */
+  --secondary-color: rgb(40, 54, 24); /* black forest */
+  --accent-color: rgb(250, 249, 241); /* cornsilk */
   --light_Caramel-color: #dda15e; /* caramel */
   --copper-color: #bc6c25; /* copper */
+}
+/* For Safari/iOS */
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Optional: remove focus outline if you don't want it */
+div:focus {
+  outline: none;
 }
