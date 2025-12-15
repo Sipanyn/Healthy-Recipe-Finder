@@ -1,0 +1,21 @@
+.get_container {
+  .title {
+    text-align: center;
+    width: 100%;
+    font-family: Nunito-Bold;
+    color: var(--secondary-color);
+  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .get_container {
+    justify-content: space-between;
+    .title {
+      margin-bottom: 0;
+    }
+  }
+}

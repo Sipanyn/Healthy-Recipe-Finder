@@ -42,8 +42,7 @@
     top: 45px;
     right: -120%;
     width: 100%;
-
-    transition: all 0.3s;
+    transition: right 0.3s;
   }
   .active_menu {
     right: 0px;
