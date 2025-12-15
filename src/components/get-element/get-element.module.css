@@ -1,5 +1,5 @@
 .get_element_container {
-  width: clamp(250px, 100%, 300px);
+  width: clamp(300px, 100%, 300px);
   display: flex;
   flex-direction: column;
   color: var(--secondary-color);
@@ -23,5 +23,11 @@
   .content {
     font-family: Nunito-medium;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .get_element_container {
+    width: clamp(300px, 100%, 450px);
   }
 }
