@@ -1,0 +1,20 @@
+.recipe_info_element_container {
+  color: var(--secondary-color);
+  font-family: Nunito-Medium;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 4px;
+  .info_icon {
+    width: 15px;
+    height: 15px;
+  }
+  .info_title {
+    margin: 0;
+  }
+  .info_content {
+    margin: 0;
+  }
+}

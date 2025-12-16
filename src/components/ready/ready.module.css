@@ -1,0 +1,35 @@
+.ready_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  padding: 15px 0px;
+  border-radius: 8px;
+  background-color: rgba(221, 161, 94, 0.4);
+  .ready_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      color: var(--secondary-color);
+      font-family: Nunito-Bold;
+    }
+    .content {
+      color: var(--secondary-color);
+      font-family: Nunito-medium;
+      margin-inline: 20px;
+      text-align: left;
+    }
+    .button {
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ready_container {
+    width: 100%;
+    background-size: 100%;
+  }
+}

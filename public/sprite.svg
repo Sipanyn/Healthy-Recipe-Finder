@@ -52,4 +52,19 @@
 <symbol id="minumum_icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 128 128">
 	<path fill="#0fe999" d="m29.01 6.24l31.71 54.92H29.01L64 121.76l34.99-60.6H67.28L98.99 6.24z" />
 </symbol>
+<symbol id="person_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<path fill="currentColor" d="M6.5 7.5a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0M3 19a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v3H3z" />
+</symbol>
+<symbol id="clock_icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+	<g fill="none">
+		<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5.965 3.136a4 4 0 0 0-2.829 2.829m14.899-2.829a4 4 0 0 1 2.829 2.829" />
+		<path fill="currentColor" fill-rule="evenodd" d="M12 20a8 8 0 1 0 0-16a8 8 0 0 0 0 16m1-12a1 1 0 1 0-2 0v3.75c0 .69.56 1.25 1.25 1.25H15a1 1 0 1 0 0-2h-2z" clip-rule="evenodd" />
+	</g>
+</symbol>
+<symbol id="cook_icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48">
+	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+		<path fill="currentColor" d="M42 36V20H14v16a6 6 0 0 0 6 6h16a6 6 0 0 0 6-6" />
+		<path d="M4 20h40M18 8v4m10-6v6m10-4v4" />
+	</g>
+</symbol>
 </svg>

@@ -6,6 +6,7 @@ import Banner from "../banner/banner";
 
 import Get from "../get/get";
 import Built from "../built/built";
+import Ready from "../ready/ready";
 const TitleEntries = {
   title: "Healthy meals, zero fuss",
   content:
@@ -33,6 +34,12 @@ const Home: React.FC = () => {
         second_content=" Whether you're new to the kitchen or just need fresh ideas,we've got you covered."
         src="/images/A woman cutting fres.png"
       />
+      <Ready
+        title="Ready to cook smarter?"
+        content="Hit the button,pick a recipe,and get dinner on the table--fast"
+      >
+        <Button variant="contained">Browse recipes</Button>
+      </Ready>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import Title from "../base/title/title";
+import RecipesList from "../recipes-list/recipes-list";
 import styles from "./recipes.module.css";
 const TitleEntries = {
   title: "Explore our simple,healthy recipes",
@@ -10,6 +11,7 @@ const Recipes: React.FC = () => {
   return (
     <div className={styles.recipes_component}>
       <Title title={TitleEntries.title} content={TitleEntries.content}></Title>
+      <RecipesList />
     </div>
   );
 };
