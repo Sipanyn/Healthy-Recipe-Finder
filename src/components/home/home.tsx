@@ -3,10 +3,10 @@ import Button from "../base/button/button";
 import Title from "../base/title/title";
 import styles from "./home.module.css";
 import Banner from "../banner/banner";
-
 import Get from "../get/get";
 import Built from "../built/built";
 import Ready from "../ready/ready";
+
 const TitleEntries = {
   title: "Healthy meals, zero fuss",
   content:
@@ -26,6 +26,7 @@ const Home: React.FC = () => {
           Start exploring
         </Button>
       </Title>
+
       <Banner />
       <Get />
       <Built

@@ -1,9 +1,17 @@
+import { useState } from "react";
+import SkeletonBanner from "../skeleton-banner/skeleton-banner";
 import styles from "./banner.module.css";
 
-const Banner = () => {
+const Banner: React.FC = () => {
+  const [loaded, setLoaded] = useState(false);
   return (
     <div className={styles.banner_container}>
-      <img src="/images/A woman cooking heal.png" alt="banner_image" />
+      {!loaded && <SkeletonBanner />}
+      <img
+        onLoad={() => setLoaded(true)}
+        src="/images/A woman cooking heal.png"
+        alt="banner_image"
+      />
     </div>
   );
 };
