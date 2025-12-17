@@ -2,7 +2,7 @@ html,
 body,
 #root {
   overflow-x: hidden;
-  height: 100dvh;
+  min-height: 100dvh;
 }
 #root {
   max-width: 1280px;

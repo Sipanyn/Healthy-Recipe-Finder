@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import Title from "../base/title/title";
 import RecipesList from "../recipes-list/recipes-list";
 import styles from "./recipes.module.css";
+
 const TitleEntries = {
   title: "Explore our simple,healthy recipes",
   content:
@@ -8,6 +10,9 @@ const TitleEntries = {
 } as const;
 type TitleEntries = (typeof TitleEntries)[keyof typeof TitleEntries];
 const Recipes: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
   return (
     <div className={styles.recipes_component}>
       <Title title={TitleEntries.title} content={TitleEntries.content}></Title>
