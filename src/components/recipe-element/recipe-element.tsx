@@ -1,5 +1,8 @@
+import { useState } from "react";
 import RecipeInfoElement from "../recipe-info-element/recipe-info-element";
 import styles from "./recipe-element.module.css";
+
+import SkeletonElement from "../base/skeleton-element/skeleton-element";
 type RecipeElementProps = {
   title: string;
   des: string;
@@ -18,10 +21,17 @@ const RecipeElement: React.FC<RecipeElementProps> = ({
   img,
   ...props
 }) => {
+  const [loaded, setLoaded] = useState(false);
   return (
     <div className={styles.recipeElement_container}>
       <div className={styles.img_container}>
-        <img src={img} alt="" />
+        {!loaded && <SkeletonElement height="100%" image={true} />}
+        <img
+          onLoad={() => setLoaded(true)}
+          style={{ display: loaded ? "block" : "none" }}
+          src={img}
+          alt=""
+        />
       </div>
       <h4 className={styles.title}>{title}</h4>
       <p className={styles.content}>{des}</p>

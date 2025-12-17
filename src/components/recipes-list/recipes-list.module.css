@@ -1,3 +1,8 @@
+.recipes_list_loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .recipes_list_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

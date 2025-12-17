@@ -4,17 +4,19 @@ import styles from "./recipes-list.module.css";
 import { useRecipes } from "../../hooks/useRecipes";
 import Button from "../base/button/button";
 import Loading from "../loading/loading";
+import RecipeElementSkeleton from "../recipe-element-skeleton/recipe-element-skeleton";
 
 const RecipesList: React.FC = () => {
   const { data: recipes, isLoading, error } = useRecipes();
   if (isLoading) {
-    return <Loading />;
+    return (
+      <div className={styles.recipes_list_loading}>
+        <Loading />
+      </div>
+    );
   }
   if (error) {
     console.log("error");
-  }
-  if (recipes) {
-    console.log(recipes);
   }
 
   return (
