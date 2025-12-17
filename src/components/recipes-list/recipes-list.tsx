@@ -3,11 +3,12 @@ import RecipeElement from "../recipe-element/recipe-element";
 import styles from "./recipes-list.module.css";
 import { useRecipes } from "../../hooks/useRecipes";
 import Button from "../base/button/button";
+import Loading from "../loading/loading";
 
 const RecipesList: React.FC = () => {
   const { data: recipes, isLoading, error } = useRecipes();
   if (isLoading) {
-    console.log("loading");
+    return <Loading />;
   }
   if (error) {
     console.log("error");
