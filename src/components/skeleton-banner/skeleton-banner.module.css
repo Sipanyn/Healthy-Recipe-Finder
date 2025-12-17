@@ -1,9 +1,0 @@
-.SkeletonBannerWrapper {
-  /* margin: 20px 0px;
-  padding: 10px 15px; */
-  .SkeletonBanner {
-    max-width: 800px;
-    margin: auto;
-    aspect-ratio: 16/9;
-  }
-}

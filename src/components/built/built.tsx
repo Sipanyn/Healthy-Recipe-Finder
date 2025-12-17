@@ -1,5 +1,7 @@
 import type React from "react";
 import styles from "./built.module.css";
+import { useState } from "react";
+import SkeletonElement from "../base/skeleton-element/skeleton-element";
 type BuiltProps = {
   title: string;
   first_content: string;
@@ -12,6 +14,7 @@ const Built: React.FC<BuiltProps> = ({
   second_content,
   src,
 }) => {
+  const [loaded, setLoaded] = useState(false);
   return (
     <div className={styles.built_container}>
       <div className={styles.title_content}>
@@ -22,7 +25,13 @@ const Built: React.FC<BuiltProps> = ({
         </div>
       </div>
       <div className={styles.image_container}>
-        <img src={src} alt="built_image" />
+        {!loaded && <SkeletonElement height={"100%"} image={true} />}
+        <img
+          onLoad={() => setLoaded(true)}
+          style={{ display: loaded ? "block" : "none" }}
+          src={src}
+          alt="built_image"
+        />
       </div>
     </div>
   );

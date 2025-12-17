@@ -6,7 +6,6 @@ import Banner from "../banner/banner";
 import Get from "../get/get";
 import Built from "../built/built";
 import Ready from "../ready/ready";
-
 const TitleEntries = {
   title: "Healthy meals, zero fuss",
   content:
