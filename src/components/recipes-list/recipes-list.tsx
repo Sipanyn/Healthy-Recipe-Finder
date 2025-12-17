@@ -4,7 +4,6 @@ import styles from "./recipes-list.module.css";
 import { useRecipes } from "../../hooks/useRecipes";
 import Button from "../base/button/button";
 import Loading from "../loading/loading";
-import RecipeElementSkeleton from "../recipe-element-skeleton/recipe-element-skeleton";
 
 const RecipesList: React.FC = () => {
   const { data: recipes, isLoading, error } = useRecipes();
