@@ -6,16 +6,14 @@ import Button from "../base/button/button";
 import Loading from "../loading/loading";
 
 const RecipesList: React.FC = () => {
-  const { data: recipes, isLoading, error } = useRecipes();
+  throw new Error();
+  const { data: recipes, isLoading } = useRecipes();
   if (isLoading) {
     return (
       <div className={styles.recipes_list_loading}>
         <Loading />
       </div>
     );
-  }
-  if (error) {
-    console.log("error");
   }
 
   return (

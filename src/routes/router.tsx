@@ -5,11 +5,13 @@ import Profile from "../components/profile/profile";
 import Details from "../components/details/details";
 import Recipes from "../components/recipes/recipes";
 import NotFound from "../components/not-found/not-found";
+import BoundaryError from "../components/boundary-error/boundary-error";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <BoundaryError />,
     children: [
       { index: true, element: <Home /> },
       {

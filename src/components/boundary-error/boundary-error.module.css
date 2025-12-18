@@ -1,0 +1,17 @@
+.boundary_container {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  .error_icon {
+    color: var(--secondary-color);
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .content {
+  }
+}
