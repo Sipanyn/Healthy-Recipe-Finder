@@ -6,7 +6,6 @@ import Button from "../base/button/button";
 import Loading from "../loading/loading";
 
 const RecipesList: React.FC = () => {
-  throw new Error();
   const { data: recipes, isLoading } = useRecipes();
   if (isLoading) {
     return (
