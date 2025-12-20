@@ -9,9 +9,9 @@ const Hamburger: React.FC<React.HtmlHTMLAttributes<HTMLDivElement>> = ({
     <div {...props} className={styles.hamburger_container}>
       <svg className={styles.hamburger_icon}>
         {isMenuOpen ? (
-          <use href="sprite.svg#close_hamburger_icon"></use>
+          <use href="/sprite.svg#close_hamburger_icon"></use>
         ) : (
-          <use href="sprite.svg#hamburger_icon"></use>
+          <use href="/sprite.svg#hamburger_icon"></use>
         )}
       </svg>
     </div>

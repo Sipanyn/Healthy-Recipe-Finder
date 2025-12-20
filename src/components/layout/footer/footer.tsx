@@ -6,13 +6,13 @@ const Footer: React.FC = () => {
       <div className={styles.content}>Made with ❤️ and 🥑</div>
       <div className={styles.social_media}>
         <svg className={styles.instagram_icon}>
-          <use href="sprite.svg#instagram_icon"></use>
+          <use href="/sprite.svg#instagram_icon"></use>
         </svg>
         <svg className={styles.twitter_icon}>
-          <use href="sprite.svg#twitter_icon"></use>
+          <use href="/sprite.svg#twitter_icon"></use>
         </svg>
         <svg className={styles.tiktok_icon}>
-          <use href="sprite.svg#tiktok_icon"></use>
+          <use href="/sprite.svg#tiktok_icon"></use>
         </svg>
       </div>
     </div>

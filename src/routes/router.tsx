@@ -22,5 +22,5 @@ export const router = createBrowserRouter([
       { path: "profile", element: <Profile /> },
     ],
   },
-  { path: "*", element: <NotFound /> },
+  { path: "*", element: <NotFound>home</NotFound> },
 ]);

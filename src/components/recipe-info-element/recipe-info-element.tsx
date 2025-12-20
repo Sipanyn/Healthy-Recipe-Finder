@@ -13,7 +13,7 @@ const RecipeInfoElement: React.FC<RecipeInfoElementProps> = ({
   return (
     <div className={styles.recipe_info_element_container}>
       <svg className={styles.info_icon}>
-        <use href={`sprite.svg#${icon}_icon`}></use>
+        <use href={`/sprite.svg#${icon}_icon`}></use>
       </svg>
       <p className={styles.info_title}>{title}:</p>
       <p className={styles.info_content}>{content}</p>

@@ -15,8 +15,8 @@
 
 :root {
   line-height: 1.5;
-  --primary-color: #606c38; /* olive leafe */
-  --secondary-color: #283618; /* black forest */
+  --primary-color: rgb(96, 108, 56); /* olive leafe */
+  --secondary-color: hsl(88, 38%, 15%); /* black forest */
   --accent-color: rgb(250, 249, 241); /* cornsilk */
   --light_Caramel-color: rgb(221, 161, 94); /* caramel */
   --copper-color: #bc6c25; /* copper */

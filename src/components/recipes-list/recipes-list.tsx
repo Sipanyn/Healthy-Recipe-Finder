@@ -4,8 +4,11 @@ import styles from "./recipes-list.module.css";
 import { useRecipes } from "../../hooks/useRecipes";
 import Button from "../base/button/button";
 import Loading from "../loading/loading";
+import { useNavigate } from "react-router";
 
 const RecipesList: React.FC = () => {
+  const navigate = useNavigate();
+
   const { data: recipes, isLoading } = useRecipes();
   if (isLoading) {
     return (
@@ -27,7 +30,12 @@ const RecipesList: React.FC = () => {
           servingSize={item.servingCount}
           img={item.image}
         >
-          <Button variant="full_width">View Recipe</Button>
+          <Button
+            onClick={() => navigate(`/recipes/${item.id}`)}
+            variant="full_width"
+          >
+            View Recipe
+          </Button>
         </RecipeElement>
       ))}
     </div>

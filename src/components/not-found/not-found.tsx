@@ -1,11 +1,17 @@
 import { useNavigate } from "react-router";
 import Button from "../base/button/button";
 import styles from "./not-found.module.css";
+import type { PropsWithChildren } from "react";
 
-const NotFound: React.FC = () => {
+const NotFound: React.FC<PropsWithChildren> = ({ children }) => {
   const navigate = useNavigate();
   function navigateToHome(): void {
-    navigate("/");
+    if (children === "home") {
+      navigate("/");
+    }
+    if (children === "recipes") {
+      navigate("/recipes");
+    }
   }
   return (
     <div className={styles.notFound_container}>
@@ -14,7 +20,7 @@ const NotFound: React.FC = () => {
       </svg>
       <h3 className={styles.title}>Nothing was found here...</h3>
       <Button onClick={navigateToHome} variant="contained">
-        Back to home
+        Back to {children}
       </Button>
     </div>
   );

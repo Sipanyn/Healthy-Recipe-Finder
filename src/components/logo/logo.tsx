@@ -6,7 +6,7 @@ const Logo: React.FC = () => {
     <NavLink to="/">
       <div className={styles.logo_container}>
         <svg className={styles.logo_icon}>
-          <use href="sprite.svg#logo_icon"></use>
+          <use href="/sprite.svg#logo_icon"></use>
         </svg>
         <p>HealthyRecipeFinder</p>
       </div>

@@ -16,7 +16,11 @@ const Button: React.FC<ButtonProps> = ({ variant, ...props }) => {
     );
   }
   if (variant === "full_width") {
-    return <button className={`${styles.full_width}`}>{props.children}</button>;
+    return (
+      <button {...props} className={`${styles.full_width}`}>
+        {props.children}
+      </button>
+    );
   }
 };
 
